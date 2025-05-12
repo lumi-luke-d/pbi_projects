@@ -83,7 +83,7 @@ relationship 2d5dc768-39d2-4255-95bd-263a87721e08
 	fromColumn: COMPANIES.UPDATED_DATETIME
 	toColumn: LocalDateTable_2e184826-fb8e-46fb-8875-fcdbe3dba603.Date
 
-relationship bd1b847c-3a38-aa18-32f8-c6968f76bfc1
-	fromColumn: COMPANIES.INSERTED_DATETIME
-	toColumn: DIM_DATE.DATE
+relationship ea8b99bb-f992-c18a-647e-4fa694edd606
+	fromColumn: COMPANIES.INSERTED_DATE
+	toColumn: DIM_DATE.Date
 

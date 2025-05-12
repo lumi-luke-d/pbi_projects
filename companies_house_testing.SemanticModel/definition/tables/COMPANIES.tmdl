@@ -1,6 +1,10 @@
 table COMPANIES
 	lineageTag: 283c117a-5dfb-43b7-ac0f-0a6c257e2127
 
+	measure COMPANIES_COUNT = DISTINCTCOUNT(COMPANIES[COMPANY_ID])
+		formatString: #,0
+		lineageTag: 58e0fe5b-404b-45e9-bba3-d0e4d98384ee
+
 	column COMPANY_NAME
 		dataType: string
 		lineageTag: 2cd64c06-e437-4c88-833a-3ea46bfbcd40
@@ -585,14 +589,16 @@ table COMPANIES
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column INSERTED_DATETIME
+	column INSERTED_DATE
 		dataType: dateTime
-		formatString: General Date
+		formatString: Long Date
 		lineageTag: b9f8942d-c4ee-432f-99b9-5f1dc5eab40b
 		summarizeBy: none
-		sourceColumn: INSERTED_DATETIME
+		sourceColumn: INSERTED_DATE
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column UPDATED_DATETIME
 		dataType: dateTime
@@ -612,11 +618,13 @@ table COMPANIES
 		mode: import
 		source =
 				let
-				    Source = Value.NativeQuery(Snowflake.Databases("gp81875.west-europe.azure.snowflakecomputing.com","DATA_SCIENCE",[Role="DATA_SCIENTIST"]){[Name="COMPANIES_HOUSE"]}[Data], "SELECT * FROM#(lf)COMPANIES_HOUSE.COMPANIES_HOUSE.COMPANIES#(lf)LIMIT 50000", null, [EnableFolding=true])
+				    Source = Value.NativeQuery(Snowflake.Databases("gp81875.west-europe.azure.snowflakecomputing.com","DATA_SCIENCE",[Role="DATA_SCIENTIST"]){[Name="COMPANIES_HOUSE"]}[Data], "SELECT * FROM#(lf)COMPANIES_HOUSE.COMPANIES_HOUSE.COMPANIES#(lf)LIMIT 50000", null, [EnableFolding=true]),
+				    #"Renamed Columns" = Table.RenameColumns(Source,{{"INSERTED_DATETIME", "INSERTED_DATE"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"INSERTED_DATE", type date}})
 				in
-				    Source
-
-	changedProperty = Name
+				    #"Changed Type"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 

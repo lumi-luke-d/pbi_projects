@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
+  "name": "ba52f85a88abc8e0008e",
+  "position": {
+    "x": 866.95427092320961,
+    "y": 12.148403796376186,
+    "z": 2,
+    "height": 75.099223468507333,
+    "width": 201.00086281276961,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "COMPANIES"
+                    }
+                  },
+                  "Property": "COMPANIES_COUNT"
+                }
+              },
+              "queryRef": "COMPANIES.COMPANIES_COUNT",
+              "nativeQueryRef": "COMPANIES_COUNT"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "COMPANIES"
+                  }
+                },
+                "Property": "COMPANIES_COUNT"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "COMPANIES.COMPANIES_COUNT"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

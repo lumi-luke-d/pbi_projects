@@ -23,15 +23,14 @@
         {
           "location": {
             "x": 284,
-            "y": 0
+            "y": 50
           },
           "nodeIndex": "DIM_DATE",
-          "nodeLineageTag": "f48efbc8-1668-4ded-bb40-0cf1dd4d5fb1",
           "size": {
-            "height": 300,
+            "height": 200,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 0
         }
       ],
       "name": "All tables",
