@@ -1,0 +1,89 @@
+relationship a8fd3230-912a-4bb8-beaf-b6cf7e65200b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.ACCOUNTS_NEXTDUEDATE
+	toColumn: LocalDateTable_706aa34b-ac00-447f-b6a2-141a6ad74b19.Date
+
+relationship d4bd3c6d-5bb8-4dc6-9059-26ae29595bd6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.ACCOUNTS_LASTMADEUPDATE
+	toColumn: LocalDateTable_ca971020-512f-4b15-8c80-fd38c7052aca.Date
+
+relationship 4f52844a-cc8b-48af-8e82-c0f589c44a66
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.RETURNS_NEXTDUEDATE
+	toColumn: LocalDateTable_7b8b14bd-eba7-47e1-a13b-e4a89d727b60.Date
+
+relationship 640f343a-df9f-4677-b03f-12ba9828e492
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.RETURNS_LASTMADEUPDATE
+	toColumn: LocalDateTable_d8184f53-9e4a-4add-ba14-b4446fe5c4fe.Date
+
+relationship caac2805-43b4-4e3d-a43c-b9e7ab03e2bc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_1
+	toColumn: LocalDateTable_85930dc2-c27d-43b2-9ad5-645e94296d66.Date
+
+relationship b6569d3f-0f8c-4a9e-b37b-676209c612ec
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_2
+	toColumn: LocalDateTable_ea070c89-24ec-4dc6-83b1-85b72c8e0682.Date
+
+relationship 98b2c791-b81d-4c7c-937e-c05a1e33e979
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_3
+	toColumn: LocalDateTable_6f237b36-1129-4232-b97f-0bcc590c8146.Date
+
+relationship 775144f6-946b-4bb8-8f46-4cd51916a93d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_4
+	toColumn: LocalDateTable_631d1c3f-01c3-499a-95d5-93f2520d3ff5.Date
+
+relationship 6b0b83ca-790e-4f2d-b471-b45085c48fc1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_5
+	toColumn: LocalDateTable_d8315f25-68a9-4d36-ace9-af2e502aecfd.Date
+
+relationship eaf5a3af-848a-4f58-b64e-7584ff0f07bd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_6
+	toColumn: LocalDateTable_e164badc-1658-4322-bcab-1e17783df143.Date
+
+relationship f1aa77d6-803f-4552-b1fd-b0a047bba847
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_7
+	toColumn: LocalDateTable_a8c6d009-307c-454f-bbe5-b9da5cf78abc.Date
+
+relationship 8d7e8008-8cb7-4c63-bd4e-f9468e9c5f33
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_8
+	toColumn: LocalDateTable_4087b61f-91cb-47d8-bdf7-7fe8234b2357.Date
+
+relationship 2e0401f3-e920-414c-85d2-ab71b034041f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_9
+	toColumn: LocalDateTable_3c924a77-6f0d-4e38-9a4e-d0d70c1a698c.Date
+
+relationship e8674f82-7875-4640-b424-8840be0b8303
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.PREVIOUS_COMPANY_CESSATION_DATE_10
+	toColumn: LocalDateTable_b48fd794-481e-461c-bfac-242628dfd932.Date
+
+relationship 73f9fd3e-c0a8-49f9-926d-79d6d35d3368
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.CONFSTMTNEXTDUEDATE
+	toColumn: LocalDateTable_d1aee705-f8cb-4aca-b867-a794cb81c35b.Date
+
+relationship a629ded7-d7d9-46a8-8fe9-51ef381526ce
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.CONFSTMTLASTMADEUPDATE
+	toColumn: LocalDateTable_c2e60a67-b539-4cee-a41d-d1a426967332.Date
+
+relationship 2d5dc768-39d2-4255-95bd-263a87721e08
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COMPANIES.UPDATED_DATETIME
+	toColumn: LocalDateTable_2e184826-fb8e-46fb-8875-fcdbe3dba603.Date
+
+relationship bd1b847c-3a38-aa18-32f8-c6968f76bfc1
+	fromColumn: COMPANIES.INSERTED_DATETIME
+	toColumn: DIM_DATE.DATE
+

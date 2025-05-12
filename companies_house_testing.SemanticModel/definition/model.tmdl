@@ -1,9 +1,39 @@
 model Model
 	culture: en-GB
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
 
 annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBIDesktopVersion = 2.142.1277.0 (25.04)+014fde450f93691fc9537f0758d73d1c5df153ef
+
+annotation PBI_QueryOrder = ["COMPANIES","DIM_DATE"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table COMPANIES
+ref table DateTableTemplate_74c153c3-7fd4-46ff-9600-7a4d475d214a
+ref table LocalDateTable_706aa34b-ac00-447f-b6a2-141a6ad74b19
+ref table LocalDateTable_ca971020-512f-4b15-8c80-fd38c7052aca
+ref table LocalDateTable_7b8b14bd-eba7-47e1-a13b-e4a89d727b60
+ref table LocalDateTable_d8184f53-9e4a-4add-ba14-b4446fe5c4fe
+ref table LocalDateTable_85930dc2-c27d-43b2-9ad5-645e94296d66
+ref table LocalDateTable_ea070c89-24ec-4dc6-83b1-85b72c8e0682
+ref table LocalDateTable_6f237b36-1129-4232-b97f-0bcc590c8146
+ref table LocalDateTable_631d1c3f-01c3-499a-95d5-93f2520d3ff5
+ref table LocalDateTable_d8315f25-68a9-4d36-ace9-af2e502aecfd
+ref table LocalDateTable_e164badc-1658-4322-bcab-1e17783df143
+ref table LocalDateTable_a8c6d009-307c-454f-bbe5-b9da5cf78abc
+ref table LocalDateTable_4087b61f-91cb-47d8-bdf7-7fe8234b2357
+ref table LocalDateTable_3c924a77-6f0d-4e38-9a4e-d0d70c1a698c
+ref table LocalDateTable_b48fd794-481e-461c-bfac-242628dfd932
+ref table LocalDateTable_d1aee705-f8cb-4aca-b867-a794cb81c35b
+ref table LocalDateTable_c2e60a67-b539-4cee-a41d-d1a426967332
+ref table LocalDateTable_2e184826-fb8e-46fb-8875-fcdbe3dba603
+ref table DIM_DATE
 
 ref cultureInfo en-GB
 

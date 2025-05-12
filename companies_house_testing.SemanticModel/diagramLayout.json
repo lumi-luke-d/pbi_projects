@@ -7,7 +7,33 @@
         "x": 0,
         "y": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "COMPANIES",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 0
+          },
+          "nodeIndex": "DIM_DATE",
+          "nodeLineageTag": "f48efbc8-1668-4ded-bb40-0cf1dd4d5fb1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        }
+      ],
       "name": "All tables",
       "zoomValue": 100,
       "pinKeyFieldsToTop": false,

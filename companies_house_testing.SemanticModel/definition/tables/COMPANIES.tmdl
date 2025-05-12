@@ -1,0 +1,622 @@
+table COMPANIES
+	lineageTag: 283c117a-5dfb-43b7-ac0f-0a6c257e2127
+
+	column COMPANY_NAME
+		dataType: string
+		lineageTag: 2cd64c06-e437-4c88-833a-3ea46bfbcd40
+		summarizeBy: none
+		sourceColumn: COMPANY_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPANY_ID
+		dataType: string
+		lineageTag: ee4089ab-8d98-4600-882c-8a69dee42052
+		summarizeBy: none
+		sourceColumn: COMPANY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGADDRESS_CAREOF
+		dataType: string
+		lineageTag: f39585f6-4597-4307-9dda-c269669d5af8
+		summarizeBy: none
+		sourceColumn: REGADDRESS_CAREOF
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGADDRESS_POBOX
+		dataType: string
+		lineageTag: a049f439-10ac-46db-9b82-ccb49cb969b6
+		summarizeBy: none
+		sourceColumn: REGADDRESS_POBOX
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGADDRESS_ADDRESSLINE1
+		dataType: string
+		lineageTag: 4392d812-c85e-497b-a139-d5e65ebb9b78
+		summarizeBy: none
+		sourceColumn: REGADDRESS_ADDRESSLINE1
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGADDRESS_ADDRESSLINE2
+		dataType: string
+		lineageTag: a334eb04-a979-45f5-8d5e-437787b93180
+		summarizeBy: none
+		sourceColumn: REGADDRESS_ADDRESSLINE2
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGADDRESS_POSTTOWN
+		dataType: string
+		lineageTag: a2c4db60-665a-413a-9247-221283c86d54
+		summarizeBy: none
+		sourceColumn: REGADDRESS_POSTTOWN
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGADDRESS_COUNTY
+		dataType: string
+		lineageTag: 25df48f3-2e67-4cce-92f4-64dad297514a
+		summarizeBy: none
+		sourceColumn: REGADDRESS_COUNTY
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGADDRESS_COUNTRY
+		dataType: string
+		lineageTag: 86090744-404d-4fc1-b3d6-65ab1535cec9
+		summarizeBy: none
+		sourceColumn: REGADDRESS_COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGADDRESS_POSTCODE
+		dataType: string
+		lineageTag: 398d86e0-87e2-4cc7-a5a4-3414226930f7
+		summarizeBy: none
+		sourceColumn: REGADDRESS_POSTCODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPANYCATEGORY
+		dataType: string
+		lineageTag: bad0dde4-a2f4-4623-b1bd-1dc2e6e85e92
+		summarizeBy: none
+		sourceColumn: COMPANYCATEGORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPANY_STATUS
+		dataType: string
+		lineageTag: 803efb9c-c7a9-4280-85d2-057ac05d0df7
+		summarizeBy: none
+		sourceColumn: COMPANY_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNTRY_OF_ORIGIN
+		dataType: string
+		lineageTag: 871889bc-9db3-4d80-a113-0300d15867fa
+		summarizeBy: none
+		sourceColumn: COUNTRY_OF_ORIGIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNTRYOFORIGIN
+		dataType: string
+		lineageTag: f86c1f74-e528-450b-af83-0029d8ebe9e5
+		summarizeBy: none
+		sourceColumn: COUNTRYOFORIGIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISSOLUTIONDATE
+		dataType: string
+		lineageTag: 84417b2f-675b-4409-8b6a-1a5597f6c709
+		summarizeBy: none
+		sourceColumn: DISSOLUTIONDATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column INCORPORATIONDATE
+		dataType: string
+		lineageTag: 671a8333-7912-430c-ab4d-d46d835c7de4
+		summarizeBy: none
+		sourceColumn: INCORPORATIONDATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACCOUNTS_ACCOUNTREFDAY
+		dataType: double
+		lineageTag: 8e04a25a-3c40-49c7-ad89-507b4fd89b59
+		summarizeBy: sum
+		sourceColumn: ACCOUNTS_ACCOUNTREFDAY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ACCOUNTS_ACCOUNTREFMONTH
+		dataType: double
+		lineageTag: f1f54751-0fb5-4370-907a-3e6e21f59e72
+		summarizeBy: sum
+		sourceColumn: ACCOUNTS_ACCOUNTREFMONTH
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ACCOUNTS_NEXTDUEDATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 919a9f85-8c51-436c-aedc-7fa3d9ef7095
+		summarizeBy: none
+		sourceColumn: ACCOUNTS_NEXTDUEDATE
+
+		variation Variation
+			isDefault
+			relationship: a8fd3230-912a-4bb8-beaf-b6cf7e65200b
+			defaultHierarchy: LocalDateTable_706aa34b-ac00-447f-b6a2-141a6ad74b19.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ACCOUNTS_LASTMADEUPDATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f902223b-8b75-452e-8360-287123960c96
+		summarizeBy: none
+		sourceColumn: ACCOUNTS_LASTMADEUPDATE
+
+		variation Variation
+			isDefault
+			relationship: d4bd3c6d-5bb8-4dc6-9059-26ae29595bd6
+			defaultHierarchy: LocalDateTable_ca971020-512f-4b15-8c80-fd38c7052aca.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ACCOUNTS_ACCOUNTCATEGORY
+		dataType: string
+		lineageTag: 0abdd6e7-73f5-455f-9cb4-f188fbbbcf49
+		summarizeBy: none
+		sourceColumn: ACCOUNTS_ACCOUNTCATEGORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column RETURNS_NEXTDUEDATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 70912638-0139-4908-b31e-3a15b310f702
+		summarizeBy: none
+		sourceColumn: RETURNS_NEXTDUEDATE
+
+		variation Variation
+			isDefault
+			relationship: 4f52844a-cc8b-48af-8e82-c0f589c44a66
+			defaultHierarchy: LocalDateTable_7b8b14bd-eba7-47e1-a13b-e4a89d727b60.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column RETURNS_LASTMADEUPDATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f05088d1-7652-4ddb-8f44-fdada2572cf4
+		summarizeBy: none
+		sourceColumn: RETURNS_LASTMADEUPDATE
+
+		variation Variation
+			isDefault
+			relationship: 640f343a-df9f-4677-b03f-12ba9828e492
+			defaultHierarchy: LocalDateTable_d8184f53-9e4a-4add-ba14-b4446fe5c4fe.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column MORTGAGES_NUMMORTCHARGES
+		dataType: double
+		lineageTag: 853e5c96-12d9-4af9-8b63-65bfa61f9186
+		summarizeBy: sum
+		sourceColumn: MORTGAGES_NUMMORTCHARGES
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MORTGAGES_NUMMORTOUTSTANDING
+		dataType: double
+		lineageTag: 0c98acbf-8ee1-41a5-a829-948a07614791
+		summarizeBy: sum
+		sourceColumn: MORTGAGES_NUMMORTOUTSTANDING
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MORTGAGES_NUMMORTPARTSATISFIED
+		dataType: double
+		lineageTag: 0dada205-daa2-4a66-832f-4470a60d7ce1
+		summarizeBy: sum
+		sourceColumn: MORTGAGES_NUMMORTPARTSATISFIED
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MORTGAGES_NUMMORTSATISFIED
+		dataType: double
+		lineageTag: d00dab1c-7cbd-4b33-b790-2447c045fcde
+		summarizeBy: sum
+		sourceColumn: MORTGAGES_NUMMORTSATISFIED
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SICCODE_1
+		dataType: string
+		lineageTag: b0089c44-aa3f-4df7-b130-80956326fadc
+		summarizeBy: none
+		sourceColumn: SICCODE_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column SICCODE_2
+		dataType: string
+		lineageTag: 9aa5c23c-65ec-43f9-b357-3d397f14d4fb
+		summarizeBy: none
+		sourceColumn: SICCODE_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column SICCODE_3
+		dataType: string
+		lineageTag: 5cd50791-2f7c-402c-884e-c3d96f170b75
+		summarizeBy: none
+		sourceColumn: SICCODE_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column SICCODE_4
+		dataType: string
+		lineageTag: eacbdc50-a028-41cd-9bef-6ca8ad88bea6
+		summarizeBy: none
+		sourceColumn: SICCODE_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column LIMITEDPARTNERSHIPS_NUMGENPARTNERS
+		dataType: double
+		lineageTag: 1bb40b6a-9574-4591-93ff-e6bf81e63093
+		summarizeBy: sum
+		sourceColumn: LIMITEDPARTNERSHIPS_NUMGENPARTNERS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LIMITEDPARTNERSHIPS_NUMLIMPARTNERS
+		dataType: double
+		lineageTag: e12ddac0-b7b0-4fe6-a940-bb23ca4d060a
+		summarizeBy: sum
+		sourceColumn: LIMITEDPARTNERSHIPS_NUMLIMPARTNERS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PREVIOUS_COMPANY_NAME_1
+		dataType: string
+		lineageTag: aa19a35d-a72c-4184-aefd-cb5787e44f9a
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_1
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2340c003-94d0-45ac-b6f0-330f02bb61b6
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_1
+
+		variation Variation
+			isDefault
+			relationship: caac2805-43b4-4e3d-a43c-b9e7ab03e2bc
+			defaultHierarchy: LocalDateTable_85930dc2-c27d-43b2-9ad5-645e94296d66.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PREVIOUS_COMPANY_NAME_2
+		dataType: string
+		lineageTag: ad7bc54d-16e6-410f-9141-44da5cdc3277
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_2
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a795ccec-bb18-44e0-b4ab-a89f966e10a7
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_2
+
+		variation Variation
+			isDefault
+			relationship: b6569d3f-0f8c-4a9e-b37b-676209c612ec
+			defaultHierarchy: LocalDateTable_ea070c89-24ec-4dc6-83b1-85b72c8e0682.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PREVIOUS_COMPANY_NAME_3
+		dataType: string
+		lineageTag: 62d7ed06-2afc-40df-9fb0-b30ac097afc3
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_3
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e9483193-dc03-4a08-97a7-42fcab2eca17
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_3
+
+		variation Variation
+			isDefault
+			relationship: 98b2c791-b81d-4c7c-937e-c05a1e33e979
+			defaultHierarchy: LocalDateTable_6f237b36-1129-4232-b97f-0bcc590c8146.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PREVIOUS_COMPANY_NAME_4
+		dataType: string
+		lineageTag: d6943523-e055-4b26-ae3e-a73e6d2d9043
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_4
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0a032f13-304c-4bd0-8a69-6fea3a928d29
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_4
+
+		variation Variation
+			isDefault
+			relationship: 775144f6-946b-4bb8-8f46-4cd51916a93d
+			defaultHierarchy: LocalDateTable_631d1c3f-01c3-499a-95d5-93f2520d3ff5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PREVIOUS_COMPANY_NAME_5
+		dataType: string
+		lineageTag: f99a7c1e-f95d-426d-8383-123006a24874
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_5
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 67c5d473-3ed7-41c4-83ab-d5cad10bdc76
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_5
+
+		variation Variation
+			isDefault
+			relationship: 6b0b83ca-790e-4f2d-b471-b45085c48fc1
+			defaultHierarchy: LocalDateTable_d8315f25-68a9-4d36-ace9-af2e502aecfd.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PREVIOUS_COMPANY_NAME_6
+		dataType: string
+		lineageTag: 77302177-0a7a-4009-b484-bd5ba1faf6b0
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_6
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 44b9a9df-7353-4f87-979b-b921ba635251
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_6
+
+		variation Variation
+			isDefault
+			relationship: eaf5a3af-848a-4f58-b64e-7584ff0f07bd
+			defaultHierarchy: LocalDateTable_e164badc-1658-4322-bcab-1e17783df143.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PREVIOUS_COMPANY_NAME_7
+		dataType: string
+		lineageTag: 363d1594-35b1-4879-bca7-53e7a12ea975
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_7
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_7
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: bfee886b-4666-4752-b838-cd1cef994d9d
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_7
+
+		variation Variation
+			isDefault
+			relationship: f1aa77d6-803f-4552-b1fd-b0a047bba847
+			defaultHierarchy: LocalDateTable_a8c6d009-307c-454f-bbe5-b9da5cf78abc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PREVIOUS_COMPANY_NAME_8
+		dataType: string
+		lineageTag: 8a1e8fd6-84b5-45e8-9e15-61c2db046d38
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_8
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_8
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a0fc40be-5ce7-4f30-ba3b-54b931e9c200
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_8
+
+		variation Variation
+			isDefault
+			relationship: 8d7e8008-8cb7-4c63-bd4e-f9468e9c5f33
+			defaultHierarchy: LocalDateTable_4087b61f-91cb-47d8-bdf7-7fe8234b2357.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PREVIOUS_COMPANY_NAME_9
+		dataType: string
+		lineageTag: d77f1ca8-87dc-4379-937e-eeda87d26c75
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_9
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_9
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0848858a-5bc5-4a85-950c-fef4188c40bd
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_9
+
+		variation Variation
+			isDefault
+			relationship: 2e0401f3-e920-414c-85d2-ab71b034041f
+			defaultHierarchy: LocalDateTable_3c924a77-6f0d-4e38-9a4e-d0d70c1a698c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PREVIOUS_COMPANY_NAME_10
+		dataType: string
+		lineageTag: f92adf74-8187-4ecb-bf7c-47e9850b38ea
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_NAME_10
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREVIOUS_COMPANY_CESSATION_DATE_10
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5f77eb90-6354-4953-8cf4-332f06acfc9c
+		summarizeBy: none
+		sourceColumn: PREVIOUS_COMPANY_CESSATION_DATE_10
+
+		variation Variation
+			isDefault
+			relationship: e8674f82-7875-4640-b424-8840be0b8303
+			defaultHierarchy: LocalDateTable_b48fd794-481e-461c-bfac-242628dfd932.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CONFSTMTNEXTDUEDATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 27f1f7ef-bf2e-4767-a8a4-8f7439c2863e
+		summarizeBy: none
+		sourceColumn: CONFSTMTNEXTDUEDATE
+
+		variation Variation
+			isDefault
+			relationship: 73f9fd3e-c0a8-49f9-926d-79d6d35d3368
+			defaultHierarchy: LocalDateTable_d1aee705-f8cb-4aca-b867-a794cb81c35b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CONFSTMTLASTMADEUPDATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2db6cd82-58d6-4e22-882e-7a61853a5924
+		summarizeBy: none
+		sourceColumn: CONFSTMTLASTMADEUPDATE
+
+		variation Variation
+			isDefault
+			relationship: a629ded7-d7d9-46a8-8fe9-51ef381526ce
+			defaultHierarchy: LocalDateTable_c2e60a67-b539-4cee-a41d-d1a426967332.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column INSERTED_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b9f8942d-c4ee-432f-99b9-5f1dc5eab40b
+		summarizeBy: none
+		sourceColumn: INSERTED_DATETIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column UPDATED_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4391b8f1-4005-4d30-963c-53786a076feb
+		summarizeBy: none
+		sourceColumn: UPDATED_DATETIME
+
+		variation Variation
+			isDefault
+			relationship: 2d5dc768-39d2-4255-95bd-263a87721e08
+			defaultHierarchy: LocalDateTable_2e184826-fb8e-46fb-8875-fcdbe3dba603.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition COMPANIES = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(Snowflake.Databases("gp81875.west-europe.azure.snowflakecomputing.com","DATA_SCIENCE",[Role="DATA_SCIENTIST"]){[Name="COMPANIES_HOUSE"]}[Data], "SELECT * FROM#(lf)COMPANIES_HOUSE.COMPANIES_HOUSE.COMPANIES#(lf)LIMIT 50000", null, [EnableFolding=true])
+				in
+				    Source
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+
