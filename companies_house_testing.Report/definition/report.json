@@ -5,6 +5,11 @@
       "name": "CY24SU10",
       "reportVersionAtImport": "5.63",
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Dummy_Sales_Dashboard_-__Power7535030670529238.json",
+      "reportVersionAtImport": "5.63",
+      "type": "RegisteredResources"
     }
   },
   "layoutOptimization": "None",
@@ -32,6 +37,17 @@
           "name": "CY24SU10",
           "path": "BaseThemes/CY24SU10.json",
           "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Dummy_Sales_Dashboard_-__Power7535030670529238.json",
+          "path": "Dummy_Sales_Dashboard_-__Power7535030670529238.json",
+          "type": "CustomTheme"
         }
       ]
     }
